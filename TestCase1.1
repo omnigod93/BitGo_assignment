@@ -1,0 +1,11 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Bitgo {
+
+public static void main(String[]args) {
+Systme.setProperty("webdriver.chrome.driver", "F:\\chromedriver.exe");
+WebDriver driver=new ChromeDriver();
+driver.get("https://blockstream.info/block/000000000000000000076c036ff5119e5a5a74df77abf64203473364509f7732");
+}
+}
