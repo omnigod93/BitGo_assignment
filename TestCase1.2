@@ -1,0 +1,18 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ElementState {
+
+public static void main(String []args)
+ 
+  Systme.setProperty("webdriver.chrome.driver", "F:\\chromedriver.exe");
+  WebDriver driver=new ChromeDriver();
+        driver.get("https://blockstream.info/block/000000000000000000076c036ff5119e5a5a74df77abf64203473364509f7732");
+
+driver.findElement(By.xpath("//a[@title='Get Selenium']")).isDisplayed();
+
+if(isDisplayed) {
+   System.out.println("it is displayed");
+}else{
+   System.out.println("it is not displayed");
+}
